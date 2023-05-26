@@ -1,0 +1,13 @@
+sdp_piano:
+  outputs:
+    piano:
+      account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}" 
+      database: SDP_BRONZE_DEV
+      password: "{{ env_var('DBT_SNOWFLAKE_BRONZE_PASSWORD') }}"
+      role: SYSADMIN
+      schema: SDP_BRONZE
+      threads: 2
+      type: snowflake
+      user: "{{ env_var('DBT_SNOWFLAKE_BRONZE_USERNAME') }}"
+      warehouse: COMPUTE_WH
+  target: piano

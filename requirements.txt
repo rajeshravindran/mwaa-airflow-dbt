@@ -1,0 +1,7 @@
+# requirements.txt 
+#--constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.5.1/constraints-3.10.txt"
+apache-airflow[package-extra]==2.5.1
+dbt-core
+dbt-snowflake
+dbt-databricks
+dbt-spark
